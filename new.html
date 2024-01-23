@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scientific Calculator</title>
+    <link rel="stylesheet" href="style.css">
+
+</head> 
+<body>
+    <div class="Container">
+        <form name="cacl">
+          <input type="text" name="text" id="screen" readonly>
+        </form>
+        <div class="btn">
+            <button onclick="document.cacl.text.value=Math.sin(document.cacl.text.value)">Sin</button>
+            <button onclick="document.cacl.text.value=Math.cos(document.cacl.text.value)">Cos</button>
+            <button onclick="document.cacl.text.value=Math.tan(document.cacl.text.value)">Tan</button>
+            <button onclick="document.cacl.text.value=Math.log(document.cacl.text.value)">log</button>
+
+            <button onclick="document.cacl.text.value=Math.pow(document.cacl.text.value,2)">2x</button>
+            <button onclick="document.cacl.text.value=Math.pow(document.cacl.text.value,3)">3x</button>
+            <button onclick="document.cacl.text.value=Math.sqrt(document.cacl.text.value,1/2)">&radic;</button>
+            <button onclick="document.cacl.text.value=Math.sqrt(document.cacl.text.value,1/3)">&#8731;</button>
+            
+            <button onclick="document.cacl.text.value+='1'">1</button>
+            <button onclick="document.cacl.text.value+='2'">2</button>
+            <button onclick="document.cacl.text.value+='3'">3</button>
+            <button onclick="document.cacl.text.value+='4'">4</button>
+            
+            <button onclick="document.cacl.text.value+='5'">5</button>
+            <button onclick="document.cacl.text.value+='6'">6</button>
+            <button onclick="document.cacl.text.value+='7'">7</button>
+            <button onclick="document.cacl.text.value+='8'">8</button>
+            
+            <button onclick="document.cacl.text.value+='9'">9</button>
+            <button onclick="document.cacl.text.value+='0'">0</button>
+            <button onclick="document.cacl.text.value+='.'">.</button>
+            <button onclick="document.cacl.text.value+='*'">x</button>
+            
+            <button onclick="document.cacl.text.value+='+'">+</button>
+            <button onclick="document.cacl.text.value+='-'">-</button> 
+            <button onclick="document.cacl.text.value+='/'">/</button>
+            <button onclick="document.cacl.text.value+='%'">%</button>
+            
+            <button onclick="document.cacl.text.value=Math.PI(document.cacl.text.value)">^</button>
+            <button onclick="document.cacl.text.value=eval(document.cacl.text.value)" class="resolve">=</button>
+            <button onclick="document.cacl.text.value=''" class="resolve">AC</button>
+            <button onclick="del()" class="resolve">Del</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
